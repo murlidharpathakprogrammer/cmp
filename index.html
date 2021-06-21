@@ -8,6 +8,25 @@
   <title>Gyan</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  
+  <style>
+    .gradient-footer {
+            background-color: red;
+            background-image:
+                radial-gradient(circle at top right,
+                    rgb(255, 0, 0),
+                    #f06d06 50%);
+        }
+
+        .gradient-header {
+            background-color: red;
+            background-image:
+                radial-gradient(circle at top right,
+                    #bd1414,
+                    rgb(63, 3, 3) 50%);
+        }
+
+  </style>
 
 </head>
 
@@ -81,15 +100,48 @@
 
   </div>
 
+  <!-- Footer -->
+        <footer style="background-color: rgb(255, 115, 0);" class="page-footer font-small blue gradient-footer">
 
-  <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">© 2021 Copyright:
+                <a style="color: white;" href="cmp.html"> श्री चंद्रमोहन पाठक</a>
+            </div>
+            <!-- Copyright -->
 
-  <!-- Popper JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        </footer>
+        <!-- Footer -->
+    </div>
 
-  <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    // ===== Scroll to Top ==== 
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+    } else {
+        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+    }
+});
+$('#return-to-top').click(function() {      // When arrow is clicked
+    $('body,html').animate({
+        scrollTop : 0                       // Scroll to top of body
+    }, 500);
+});
+</script>
+    
+</body>
+
+</html>
+
 </body>
 
 </html>
