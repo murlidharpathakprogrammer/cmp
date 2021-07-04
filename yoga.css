@@ -84,3 +84,8 @@ p{
         margin: 0 auto;
         }
   }
+
+.chapter{
+    background-color: cadetblue;
+    border-radius: 10px;
+}
