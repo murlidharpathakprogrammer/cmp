@@ -24,7 +24,7 @@
 #return-to-top {
 position: fixed;
 bottom: 20px;
-right: 20px;
+/* right: 20px; */
 background: rgb(0, 0, 0);
 background: rgba(0, 0, 0, 0.7);
 width: 50px;
@@ -88,4 +88,23 @@ p{
 .chapter{
     background-color: cadetblue;
     border-radius: 10px;
+}
+
+.navbar .nav-item{
+    font-size: large;
+}
+
+.navbar .nav-item:hover{
+    font-size: large;
+    box-shadow: 0 0 11px rgb(155, 151, 151);
+}
+
+.navbar-toggler:hover{
+    transform: scale(1.2);
+    box-shadow: 0 0 11px rgb(155, 151, 151);
+
+}
+.navbar-toggler:active{
+    transform: scale(1.1);
+    border: 0px;
 }
