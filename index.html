@@ -16,6 +16,16 @@
       padding: 0;
     }
     
+    .card{
+      padding: 5px;
+      margin-bottom: 12px;
+      
+    }
+
+    .card-img-top{
+      width:100%;
+    }
+
     footer{
       position: fixed;
       bottom: 0;
@@ -43,10 +53,9 @@
             <!-- Brand -->
             <a><img src="om-svgrepo-com.svg" height="30px" alt=""></a>
 
-
             <!-- Toggler/collapsibe Button -->
-            <button style="border-color: rgba(256,256,256,0.5);" class="navbar-toggler" type="button" data-toggle="collapse"
-                data-target="#collapsibleNavbar">
+            <button style="border-color: rgba(256,256,256,0.5);" class="navbar-toggler" type="button"
+                data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon "></span>
             </button>
 
@@ -54,14 +63,15 @@
             <div class="collapse navbar-collapse" id="collapsibleNavbar" style="padding-left: 20px;">
                 <ul class="navbar-nav">
                     <li class="nav-item" style="padding: 0px 15px;">
-                        <a class="active nav-link" href=""><i class="fa fa-fw fa-home"></i> Home</a>
+                        <a class="active nav-link" href="http://servingme.me/cmp/">
+                            Home</a>
                     </li>
                     <li class="nav-item" style="padding: 0px 15px;">
-                        <a class="active nav-link" href="#"><i class="fa fa-info"></i> About</a>
+                        <a class="active nav-link" href="#">About</a>
                     </li>
                     </li>
                     <li class="nav-item" style="padding: 0px 15px;">
-                        <a class="active nav-link" href="#"><i class="fa fa-phone"></i> Contact</a>
+                        <a class="active nav-link" href="#">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -71,8 +81,19 @@
 
     <div class="row" style="margin: 20px;">
       <div class="col-sm-5 col-md-6">
-        <div class="cards"">
-          <div class=" card" style="width: 18rem;">
+        <div class=" card">
+          <img class="card-img-top" src="images/maa-durga.jpg" alt="Maa Durga">
+          <div class="card-body">
+            <h5 class="card-title">विजयदशमी का संदेश</h5>
+            <h5 class="card-title">महिषासुर मर्दिनी दुर्गा का पर्व</h5>
+            <p class="card-text">बहुत प्राचीन काल में माता दुर्गा ने इस दिन महिषासुर नामक अत्यंत भयंकर राक्षस पर विजय
+              पाई थी महिषासुर राक्षस बहुत अत्याचारी था। देवताओं ने ...</p>
+            <a href="vijayadashmi.html" class="btn btn-primary">Read more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-5 col-md-6">
+        <div class=" card">
           <img class="card-img-top" src="buddhaPhoto.jpg" alt="Mahatma Buddha">
           <div class="card-body">
             <h5 class="card-title">बुद्ध पूर्णिमा का संदेश</h5>
@@ -83,14 +104,19 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
-      <div class="cards">
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="http://www.asianews.it/files/img/INDIA_-_0518_-_Yoga_day.jpg" alt="सातवाँ विश्व योग दिवस">
+      <div class="col-sm-5 col-md-6">
+        <div class="card">
+          <img class="card-img-top" src="http://www.asianews.it/files/img/INDIA_-_0518_-_Yoga_day.jpg"
+            alt="सातवाँ विश्व योग दिवस">
           <div class="card-body">
             <h5 class="card-title">सातवाँ विश्व योग दिवस</h5>
-            <p class="card-text">विदेश ही नहीं, भारतवर्ष में भी सामान्य जन योग का आशय योगासन (जिसे संक्षिप्त रूप में आसन भी कहा जाता है) समझते हैं; जबकि आसन या योगासन वास्तव में संपूर्ण अर्थ में प्रयुक्त योग की एक प्राथमिक एवं प्रारंभिक अवस्था है। 'योग' का मूल स्रोत ऋग्वेदसंहिता है एवं इसका प्रौढ़ व परमोत्कृष्ट प्रवाह उपनिषदों से प्रारंभ होता है।</p>
+            <p class="card-text">विदेश ही नहीं, भारतवर्ष में भी सामान्य जन योग का आशय योगासन (जिसे संक्षिप्त रूप
+              में आसन
+              भी कहा जाता है) समझते हैं; जबकि आसन या योगासन वास्तव में संपूर्ण अर्थ में प्रयुक्त योग की एक
+              प्राथमिक एवं
+              प्रारंभिक अवस्था है। 'योग' का मूल स्रोत ऋग्वेदसंहिता है एवं इसका प्रौढ़ व परमोत्कृष्ट प्रवाह उपनिषदों
+              से
+              प्रारंभ होता है।</p>
             <a href="World-Yoga-Day-2021.html" class="btn btn-primary">Read more</a>
           </div>
         </div>
@@ -100,50 +126,50 @@
 
   <div class="views">
     <span class="views">
-        <img src="https://visitor-badge.glitch.me/badge?page_id={{ .Permalink }}" alt="Views"/>
+      <img src="https://visitor-badge.glitch.me/badge?page_id={{ .Permalink }}" alt="Views" />
     </span>
-</div>
+  </div>
 
   </div>
 
   <!-- Footer -->
-        <footer style="background-color: rgb(255, 115, 0);" class="page-footer font-small blue gradient-footer">
+  <footer style="background-color: rgb(255, 115, 0);" class="page-footer font-small blue gradient-footer">
 
-            <!-- Copyright -->
-            <div class="footer-copyright text-center py-3">© 2021 Copyright:
-                <a style="color: white;" href="cmp.html"> श्री चंद्रमोहन पाठक</a>
-            </div>
-            <!-- Copyright -->
-
-        </footer>
-        <!-- Footer -->
+    <!-- Copyright -->
+    <div class="footer-copyright text-center">© 2021 Copyright:
+      <a style="color: white;" href="cmp.html"> श्री चंद्रमोहन पाठक</a>
     </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+  </div>
 
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
     // ===== Scroll to Top ==== 
-$(window).scroll(function() {
-    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+    $(window).scroll(function () {
+      if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
         $('#return-to-top').fadeIn(200);    // Fade in the arrow
-    } else {
+      } else {
         $('#return-to-top').fadeOut(200);   // Else fade out the arrow
-    }
-});
-$('#return-to-top').click(function() {      // When arrow is clicked
-    $('body,html').animate({
-        scrollTop : 0                       // Scroll to top of body
-    }, 500);
-});
-</script>
-    
+      }
+    });
+    $('#return-to-top').click(function () {      // When arrow is clicked
+      $('body,html').animate({
+        scrollTop: 0                       // Scroll to top of body
+      }, 500);
+    });
+  </script>
+
 </body>
 
 </html>
